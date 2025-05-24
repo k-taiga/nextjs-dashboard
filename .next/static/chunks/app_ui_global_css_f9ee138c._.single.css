@@ -580,10 +580,6 @@ select {
   display: none;
 }
 
-.h-0 {
-  height: 0;
-}
-
 .h-10 {
   height: 2.5rem;
 }
@@ -646,10 +642,6 @@ select {
 
 .min-h-screen {
   min-height: 100vh;
-}
-
-.w-0 {
-  width: 0;
 }
 
 .w-1\/2 {
@@ -918,18 +910,6 @@ select {
   border-bottom-width: 1px;
 }
 
-.border-b-\[26px\] {
-  border-bottom-width: 26px;
-}
-
-.border-l-\[15px\] {
-  border-left-width: 15px;
-}
-
-.border-r-\[15px\] {
-  border-right-width: 15px;
-}
-
 .border-t {
   border-top-width: 1px;
 }
@@ -952,19 +932,6 @@ select {
 .border-gray-300 {
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity, 1));
-}
-
-.border-b-black {
-  --tw-border-opacity: 1;
-  border-bottom-color: rgb(0 0 0 / var(--tw-border-opacity, 1));
-}
-
-.border-l-transparent {
-  border-left-color: #0000;
-}
-
-.border-r-transparent {
-  border-right-color: #0000;
 }
 
 .bg-blue-300 {
@@ -1002,14 +969,14 @@ select {
   background-color: rgb(34 197 94 / var(--tw-bg-opacity, 1));
 }
 
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
-}
-
 .bg-sky-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(224 242 254 / var(--tw-bg-opacity, 1));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
 .p-2 {
@@ -1212,6 +1179,11 @@ select {
   color: rgb(0 112 243 / var(--tw-text-opacity, 1));
 }
 
+.text-blue-600 {
+  --tw-text-opacity: 1;
+  color: rgb(47 111 235 / var(--tw-text-opacity, 1));
+}
+
 .text-gray-300 {
   --tw-text-opacity: 1;
   color: rgb(209 213 219 / var(--tw-text-opacity, 1));
@@ -1255,11 +1227,6 @@ select {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-}
-
-.text-blue-600 {
-  --tw-text-opacity: 1;
-  color: rgb(47 111 235 / var(--tw-text-opacity, 1));
 }
 
 .antialiased {
@@ -1570,16 +1537,16 @@ input[type="number"]::-webkit-outer-spin-button {
     overflow-y: auto;
   }
 
+  .md\:p-12 {
+    padding: 3rem;
+  }
+
   .md\:p-2 {
     padding: .5rem;
   }
 
   .md\:p-6 {
     padding: 1.5rem;
-  }
-
-  .md\:p-12 {
-    padding: 3rem;
   }
 
   .md\:px-2 {
