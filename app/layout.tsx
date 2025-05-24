@@ -8,7 +8,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      {/* antialiasedでフォントを滑らかにする */}
+      {/* childrenがpage.tsxの内容 */}
       <body className={ `${inter.className} antialiased`}>{children}</body>
     </html>
   );
