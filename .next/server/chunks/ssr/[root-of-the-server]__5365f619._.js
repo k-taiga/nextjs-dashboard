@@ -1,6 +1,6 @@
 module.exports = {
 
-"[project]/.next-internal/server/app/dashboard/page/actions.js [app-rsc] (server actions loader, ecmascript)": (function(__turbopack_context__) {
+"[project]/.next-internal/server/app/dashboard/(overview)/page/actions.js [app-rsc] (server actions loader, ecmascript)": (function(__turbopack_context__) {
 
 var { g: global, __dirname, m: module, e: exports } = __turbopack_context__;
 {
@@ -16,6 +16,12 @@ __turbopack_context__.n(__turbopack_context__.i("[project]/app/layout.tsx [app-r
 var { g: global, __dirname } = __turbopack_context__;
 {
 __turbopack_context__.n(__turbopack_context__.i("[project]/app/dashboard/layout.tsx [app-rsc] (ecmascript)"));
+}}),
+"[project]/app/dashboard/(overview)/loading.tsx [app-rsc] (ecmascript, Next.js server component)": ((__turbopack_context__) => {
+
+var { g: global, __dirname } = __turbopack_context__;
+{
+__turbopack_context__.n(__turbopack_context__.i("[project]/app/dashboard/(overview)/loading.tsx [app-rsc] (ecmascript)"));
 }}),
 "[project]/app/ui/dashboard/cards.tsx [app-rsc] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
@@ -719,7 +725,7 @@ async function fetchFilteredCustomers(query) {
     }
 }
 }}),
-"[project]/app/dashboard/page.tsx [app-rsc] (ecmascript)": ((__turbopack_context__) => {
+"[project]/app/dashboard/(overview)/page.tsx [app-rsc] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
 var { g: global, __dirname } = __turbopack_context__;
@@ -741,7 +747,6 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$lib$2f$data$2e$ts__$5
 ;
 ;
 async function Page() {
-    const revenue = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$lib$2f$data$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["fetchRevenue"])();
     const latestInvoices = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$lib$2f$data$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["fetchLatestInvoices"])();
     const { totalPaidInvoices, totalPendingInvoices, numberOfInvoices, numberOfCustomers } = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$lib$2f$data$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["fetchCardData"])();
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$3$2e$2_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
@@ -750,8 +755,8 @@ async function Page() {
                 className: `${__TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$lusitana_e875e951$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__lusitana$3e$__["lusitana"].className} mb-4 text-xl md:text-2xl`,
                 children: "Dashboard"
             }, void 0, false, {
-                fileName: "[project]/app/dashboard/page.tsx",
-                lineNumber: 19,
+                fileName: "[project]/app/dashboard/(overview)/page.tsx",
+                lineNumber: 20,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$3$2e$2_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -762,8 +767,8 @@ async function Page() {
                         value: totalPaidInvoices,
                         type: "collected"
                     }, void 0, false, {
-                        fileName: "[project]/app/dashboard/page.tsx",
-                        lineNumber: 23,
+                        fileName: "[project]/app/dashboard/(overview)/page.tsx",
+                        lineNumber: 24,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$3$2e$2_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$ui$2f$dashboard$2f$cards$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Card"], {
@@ -771,8 +776,8 @@ async function Page() {
                         value: totalPendingInvoices,
                         type: "pending"
                     }, void 0, false, {
-                        fileName: "[project]/app/dashboard/page.tsx",
-                        lineNumber: 24,
+                        fileName: "[project]/app/dashboard/(overview)/page.tsx",
+                        lineNumber: 25,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$3$2e$2_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$ui$2f$dashboard$2f$cards$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Card"], {
@@ -780,8 +785,8 @@ async function Page() {
                         value: numberOfInvoices,
                         type: "invoices"
                     }, void 0, false, {
-                        fileName: "[project]/app/dashboard/page.tsx",
-                        lineNumber: 25,
+                        fileName: "[project]/app/dashboard/(overview)/page.tsx",
+                        lineNumber: 26,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$3$2e$2_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$ui$2f$dashboard$2f$cards$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Card"], {
@@ -789,14 +794,14 @@ async function Page() {
                         value: numberOfCustomers,
                         type: "customers"
                     }, void 0, false, {
-                        fileName: "[project]/app/dashboard/page.tsx",
-                        lineNumber: 26,
+                        fileName: "[project]/app/dashboard/(overview)/page.tsx",
+                        lineNumber: 27,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
-                fileName: "[project]/app/dashboard/page.tsx",
-                lineNumber: 22,
+                fileName: "[project]/app/dashboard/(overview)/page.tsx",
+                lineNumber: 23,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$3$2e$2_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -805,38 +810,38 @@ async function Page() {
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$3$2e$2_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$ui$2f$dashboard$2f$revenue$2d$chart$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                         revenue: revenue
                     }, void 0, false, {
-                        fileName: "[project]/app/dashboard/page.tsx",
-                        lineNumber: 33,
+                        fileName: "[project]/app/dashboard/(overview)/page.tsx",
+                        lineNumber: 34,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$3$2e$2_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$ui$2f$dashboard$2f$latest$2d$invoices$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                         latestInvoices: latestInvoices
                     }, void 0, false, {
-                        fileName: "[project]/app/dashboard/page.tsx",
-                        lineNumber: 34,
+                        fileName: "[project]/app/dashboard/(overview)/page.tsx",
+                        lineNumber: 35,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
-                fileName: "[project]/app/dashboard/page.tsx",
-                lineNumber: 32,
+                fileName: "[project]/app/dashboard/(overview)/page.tsx",
+                lineNumber: 33,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
-        fileName: "[project]/app/dashboard/page.tsx",
-        lineNumber: 18,
+        fileName: "[project]/app/dashboard/(overview)/page.tsx",
+        lineNumber: 19,
         columnNumber: 5
     }, this);
 }
 }}),
-"[project]/app/dashboard/page.tsx [app-rsc] (ecmascript, Next.js server component)": ((__turbopack_context__) => {
+"[project]/app/dashboard/(overview)/page.tsx [app-rsc] (ecmascript, Next.js server component)": ((__turbopack_context__) => {
 
 var { g: global, __dirname } = __turbopack_context__;
 {
-__turbopack_context__.n(__turbopack_context__.i("[project]/app/dashboard/page.tsx [app-rsc] (ecmascript)"));
+__turbopack_context__.n(__turbopack_context__.i("[project]/app/dashboard/(overview)/page.tsx [app-rsc] (ecmascript)"));
 }}),
 
 };
 
-//# sourceMappingURL=%5Broot-of-the-server%5D__e382a38d._.js.map
+//# sourceMappingURL=%5Broot-of-the-server%5D__5365f619._.js.map
