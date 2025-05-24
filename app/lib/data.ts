@@ -62,6 +62,8 @@ export async function fetchCardData() {
          SUM(CASE WHEN status = 'pending' THEN amount ELSE 0 END) AS "pending"
          FROM invoices`;
 
+    // リクエストウォーターフォール = 次のリクエストが前のリクエストの完了を待つ
+    // Promise.all()を使うことで、リクエストのウォーターフォールを防いで並列で実行する
     const data = await Promise.all([
       invoiceCountPromise,
       customerCountPromise,
